@@ -1,2 +1,2 @@
-# Grid_tutorial
-LP in Grid way
+# lp_tutorial
+step by step creation of landing page
