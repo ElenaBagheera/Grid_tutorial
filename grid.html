@@ -2,106 +2,126 @@
 <html>
   <head>
     <meta charset="utf-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>HTML5 responsive landing page</title>
+	<link rel="stylesheet" href="reset.css" type="text/css" />
     <link rel="stylesheet" href="grid-style.css" type="text/css" />
     <!--<link rel="stylesheet" href="desktop.css" type="text/css" />
     <link rel="stylesheet" href="debug.css">-->
-    <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans|Baumans" rel="stylesheet" type="text/css" /> -->
+    <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans|Baumans" rel="stylesheet" type="text/css" />-->
     <!-- <script src="js/modernizr.js"></script> -->
     <!-- <script src="js/respond.min.js"></script> -->
   </head>
   <body>
-    <header>
-      <div class="row">
+  
+    <header class="row">
         <div class="col-1"></div>
         <h1 class="col-10">Welcome to Responsive Landing Page</h1>
         <div class="col-1"></div>
-        </div>
-      <div class="row">
+		<div class="row">
           <div class="col-7"></div>
-          <div class="4">
+          <div class="col-4">
             <p>Lorem ipsum dolor sit amet, consectetur</p>
           </div>
-      </div>
-      <nav>
+		  <div class="col-1"></div>
+		  </div>
+      <nav class="row">
         <h2 class="hidden">Navigation</h2>
-        <ul class="row">
+        <ul>
           <div class="col-1"></div>
           <li class="col-2"><a href="#signup">Sign up</a></li>
           <div class="col-1"></div>
           <li class="col-2"><a href="#how_we_work">How we work</a></li>
           <div class="col-1"></div>
-          <li class="col-2">Link 3</li>
+         <li class="col-2"><a href="#portfolio">Portfolio</a></li>
           <div class="col-1"></div>
-          <li class="col-2">Link 4</li>
+          <li class="col-2"><a href="#copyright">Copyright</a></li>
         </ul>
       </nav>
     </header>
-
-    <section class="container call-to-action">
+    
+	<section class="container call-to-action row">
       <h2 class="hidden">Call to action</h2>
-      <div class="row">
         <div class="col-2"></div>
         <div class="col-4">
           <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, iure cumque vitae impedit modi quidem quos aut mollitia ea, earum neque magni totam recusandae optio maxime? Labore architecto tempora commodi!</article>
       </div>
       <div class="col-6"></div>
-    </div>
     </section>
-
-    <section id="signup">
+    
+	<section id="signup" class="row">
       <h2 class="hidden">Sign-up form</h2>
-    <div class="row">
       <div class="col-1"></div>
-      <div class="col-4"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <div class="col-5"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       </div>
-      <div class="col-1"></div>
-      <div class="signup col-6">
+      <div class="signup col-4">
         <form action="#">
             <input type="email" placeholder="your@email">
             <input type="submit" value="GO">
         </form>
-      </div>
-    </div>
+		</div>
+      <div class="col-2"></div>
     </section>
 
-    <section id="deadline">
+    <section id="deadline" class="row">
       <h2 class="hidden">Countdown</h2>
-      <p>Hurry up</p>
-      <div class="countdown">Here should be a JS countdown element</div>
+      <div class="col-4"></div>
+	  <div class="col-4">
+		<p>Hurry up</p>
+		<div class="countdown">Here should be a JS countdown element</div>
+	  </div>
+	  <div class="col-4"></div>
     </section>
-
-    <section id="how_we_work">
-      <h2>How we work</h2>
-      <article>
-        <img src="http://www.lingulo.com/tutorial-content/html5/img/icon1.png" alt="" class="icon1">
-        <h3>Step 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit excepturi accusamus eaque, amet laborum animi.</p>
-      </article>
-      <article>
-        <img src="http://www.lingulo.com/tutorial-content/html5/img/icon2.png" alt="" class="icon2">
-        <h3>Step 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error animi nulla laudantium odit numquam delectus nostrum harum eveniet sequi, porro?</p>
-      </article>
-      <article>
-        <img src="http://www.lingulo.com/tutorial-content/html5/img/icon3.png" alt="" class="icon3">
+	
+	<div class="row">
+    <div class="col-1"></div>
+	<section id="how_we_work" class="col-10">
+	<h2>How we work</h2>
+	  <div class="how_we_work row">
+        <div class="col-1">
+			<img src="http://www.lingulo.com/tutorial-content/html5/img/icon1.png" alt="" class="icon1">
+		</div>
+        <div class="col-2">
+			<h3>Step 1</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit excepturi accusamus eaque, amet laborum animi.</p>
+		</div>
+		<div class="col-1"></div>
+        <div class="col-1">
+		<img src="http://www.lingulo.com/tutorial-content/html5/img/icon2.png" alt="" class="icon2">
+		</div>
+        <div class="col-2">
+		<h3>Step 2</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error animi nulla laudantium odit numquam delectus nostrum harum eveniet sequi, porro?</p>
+		</div>
+		<div class="col-1"></div>
+        <div class="col-1">
+		<img src="http://www.lingulo.com/tutorial-content/html5/img/icon3.png" alt="" class="icon3">
+		</div>
+		<div class="col-2">
         <h3>Step 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quae?</p>
-      </article>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, que?</p>
+		</div>
+		<div class="col-1"></div>
+		</div>
       <br class="clear">
     </section>
+	<div class="col-1"></div>
+	</div>
 
-    <section id="portfolio">
+	<div class="row">
+	<div class="col-1"></div>
+    <section id="portfolio" class="col-10">
       <h2>Portfolio</h2>
-      <article class="img-item">
+      <div class="col-3">
+	  <article class="img-item">
         <h3 class="hidden">description 1</h3>
         <figure>
           <img src="img/nature.jpeg" alt="">
           <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui itaque ducimus doloribus error impedit? Cumque!</figcaption>
         </figure>
       </article>
+	  </div>
+	  <div class="col-3">
       <article class="img-item">
         <h3 class="hidden">description 2</h3>
         <figure>
@@ -109,6 +129,8 @@
           <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam esse at earum ea, debitis, natus temporibus aperiam reprehenderit libero asperiores?</figcaption>
         </figure>
       </article>
+	  </div>
+	  <div class="col-3">
       <article class="img-item">
         <h3 class="hidden">description 3</h3>
         <figure>
@@ -116,6 +138,8 @@
           <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eveniet expedita reiciendis porro magnam amet, officia molestias a qui neque, magni saepe ab non nam?</figcaption>
         </figure>
       </article>
+	  </div>
+	  <div class="col-3">
       <article class="img-item">
         <h3 class="hidden">description 4</h3>
         <figure>
@@ -123,20 +147,26 @@
           <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iusto, porro maxime obcaecati labore. Nesciunt expedita, soluta assumenda optio hic praesentium eum dolores rerum. Voluptas, doloremque tempora. Illo nihil, porro?</figcaption>
         </figure>
       </article>
+	  </div>
     </section>
+	</div>
 
-    <footer>
+    <footer class="row">
       <h2 class="hidden">Footer</h2>
-      <section id="copyright">
+      <div class="col-1"></div>
+	  <div class="col-2">
+	  <section id="copyright">
         <h3 class="hidden">Copyright notice</h3>
+		Copyright text
+		</div>
         <div class="wrapper">
-          <div class="social">
+		<div class="col-7"></div>
+          <div class="social col-2">
             <a href="#"><img src="img/slideshare-logo.png" alt="" width="25"></a>
             <a href="#"><img src="img/chatting-oval-speech-bubbles.png" alt="" width="25"></a>
             <a href="#"><img src="img/fire-extinguisher.png" alt="" width="25"></a>
           </div>
-          Copyright text
-        </div>
+          </div>
       </section>
     </footer>
   </body>
